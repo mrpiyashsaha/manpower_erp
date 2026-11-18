@@ -4,7 +4,7 @@ import type { NextRequest } from 'next/server';
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  // Static assets & public endpoints
+
   if (
     pathname.startsWith('/_next') ||
     pathname.startsWith('/favicon.ico') ||
